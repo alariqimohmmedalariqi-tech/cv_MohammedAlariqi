@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد عدنان العريقي - السيرة الذاتية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+ <!-- 📌 استدعاء مكتبات React -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>محمد عدنان العريقي</h1>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">نبذة عني</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">المهارات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">الخبرات</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">المشاريع</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">التواصل</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">مرحباً، أنا</span>
+                        <!--استخدمنا الريكت للاسم-->
+                         <h1 id="react-name"></h1>
+                    </h1>
+                    <p class="hero-subtitle">متخصص تقنية معلومات</p>
+                    <p class="hero-description">
+                        أتميز بالقدرة على إدارة الأنظمة، تطوير الحلول البرمجية، ودعم البنية التحتية التقنية بشكل احترافي
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">تواصل معي</a>
+                        <a href="#about" class="btn btn-secondary">اعرف المزيد</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile_picture.jpg" alt="محمد عدنان العريقي" class="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">نبذة عني</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        أنا متخصص في تقنية المعلومات بخبرة أكاديمية وعملية، قادر على الدمج بين المعرفة النظرية والتطبيق العملي.
+                        أتميز بالقدرة على إدارة الأنظمة، تطوير الحلول البرمجية، ودعم البنية التحتية التقنية بشكل احترافي.
+                    </p>
+                    <p class="about-description">
+                        عملت في مؤسسة بن بشر التجارية حيث اكتسبت خبرة مباشرة في إدارة الشبكات، صيانة الأجهزة، وتطوير الحلول التقنية التي ساعدت في رفع كفاءة العمل داخل المؤسسة.
+                    </p>
+                    <p class="about-description">
+                        أسعى دائماً إلى أن أكون إضافة نوعية لأي فريق أعمل فيه، من خلال الالتزام، الإبداع، والعمل بروح الفريق.
+                    </p>
+                </div>
+                <div class="about-info">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <div class="info-content">
+                            <h4>الاسم</h4>
+                            <p>محمد عدنان محمد قائد العريقي</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-flag"></i>
+                        <div class="info-content">
+                            <h4>الجنسية</h4>
+                            <p>يمني - تعز</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="info-content">
+                            <h4>المؤهل</h4>
+                            <p>بكالوريوس تقنية معلومات - جامعة الحكمة</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-content">
+                            <h4>الهاتف</h4>
+                            <a href="https://wa.me/967777378261" target="_blank">967777378261</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-content">
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:alariqimohammed.alariqi@gmail.com">alariqimohammed.alariqi@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المهارات التقنية</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>تطوير الويب</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>قواعد البيانات</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL Server</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>إدارة الشبكات</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">إعداد الشبكات</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">صيانة الشبكات</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">أمان الشبكات</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-desktop"></i>
+                        <h3>أنظمة التشغيل</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Windows</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">الخبرات العملية</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>مؤسسة بن بشر التجارية</h3>
+                            <span class="timeline-date">الخبرة الحالية</span>
+                        </div>
+                        <div class="timeline-body">
+                            <ul class="experience-list">
+                                <li>إدارة وصيانة أنظمة الشبكات الداخلية</li>
+                                <li>تقديم حلول تقنية ساهمت في رفع الإنتاجية وتقليل الأعطال</li>
+                                <li>تطوير أنظمة مبسطة لجدولة المهام ومتابعة الأعمال</li>
+                                <li>دعم الموظفين فنياً وحل المشكلات التقنية اليومية</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">المشاريع والأعمال</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>تصميم مواقع السير الذاتية</h3>
+                        <p>تصميم مواقع وسير ذاتية شخصية احترافية باستخدام أحدث التقنيات</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>أنظمة قواعد البيانات</h3>
+                        <p>تطوير أنظمة قواعد بيانات لإدارة معلومات الطلاب والعملاء</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>تطبيقات الشبكات والأمان</h3>
+                        <p>تطبيقات تجريبية في الشبكات وأمن المعلومات</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Network Security</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Windows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل معي</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الهاتف</h4>
+                            <a href="https://wa.me/967777378261" target="_blank">967777378261</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                             <a href="mailto:alariqimohammed.alariqi@gmail.com">alariqimohammed.alariqi@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Outlook</h4>
+                            
+                            <a href="mailto:alariqi.mohammed@outlook.sa">alariqi.mohammed@outlook.sa</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="contact.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="الاسم" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="الرسالة" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <h3>روابط التواصل الاجتماعي</h3>
+                <div class="social-icons">
+                    <a href="https://instagram.com/3x.mr_" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://facebook.com/thr.alariqi" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://github.com/alariqimohammedalariqi-tech" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://snapchat.com/add/the.alariqi" target="_blank" class="social-link">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; جميع الحقوق محفوظة © 2025 | محمد عدنان العريقي </p>
+               
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+
+    <!--هنا استدعينا الاسم من المكتبه-->
+  <script type="text/babel">
+    function NameComponent() {
+      return <span> محمد عدنان العريقي</span>;
+    }
+    const root = ReactDOM.createRoot(document.getElementById("react-name"));
+    root.render(<NameComponent />);
+  </script>
+
+
+</body>
+</html>
